@@ -1,0 +1,466 @@
+{
+    "o:label": "z-Legal Event",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Select from a controlled vocabulary of event types.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "customvocab:17",
+                    "label": "Legal"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Keywords",
+            "o:alternate_comment": "Keywords to further specify the type of event. Use one input for each word, rather than a comma-separated string.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "keywords",
+            "label": "keywords"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Select from a controlled vocabulary indicating the status of the event.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "customvocab:2",
+                    "label": "Action Status"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "actionStatus",
+            "label": "actionStatus"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Date of event being described.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "numeric:timestamp",
+                    "label": "Timestamp"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": "Date Comment",
+            "o:alternate_comment": "Select from a controlled vocabulary to indicate the certainty of the date of the event.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "customvocab:3",
+                    "label": "Certainty"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "comment",
+            "label": "comment"
+        },
+        {
+            "o:alternate_label": "Location",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "location",
+            "label": "location"
+        },
+        {
+            "o:alternate_label": "Cause",
+            "o:alternate_comment": "The reason precipitating the event.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "causeOf",
+            "label": "causeOf"
+        },
+        {
+            "o:alternate_label": "Outcome",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "result",
+            "label": "result"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "The archival document from which the record information is drawn. Link to the digitized document or the finding aid if available. If not, input a bibliography citation.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "source",
+            "label": "Source"
+        },
+        {
+            "o:alternate_label": "Related",
+            "o:alternate_comment": "Related events.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "isRelatedTo",
+            "label": "isRelatedTo"
+        },
+        {
+            "o:alternate_label": "Primary Enslaved Participant",
+            "o:alternate_comment": "Link to the Person record for the primary enslaved participant. If no record exists, use the text input to specify participant.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "participant",
+            "label": "participant"
+        },
+        {
+            "o:alternate_label": "Enslaved Status",
+            "o:alternate_comment": "Select from a controlled vocabulary to indicate the enslavement status of the primary participant at the time of the event.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "customvocab:4",
+                    "label": "Freedom Status"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "status",
+            "label": "status"
+        },
+        {
+            "o:alternate_label": "Owner",
+            "o:alternate_comment": "Owner of the primary participant",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "owner",
+            "label": "owner"
+        },
+        {
+            "o:alternate_label": "Age",
+            "o:alternate_comment": "Age of the participant at the time of the event.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+            "vocabulary_label": "Friend of a Friend",
+            "local_name": "age",
+            "label": "age"
+        },
+        {
+            "o:alternate_label": "Author",
+            "o:alternate_comment": "The person who created the record of the event.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "author",
+            "label": "author"
+        },
+        {
+            "o:alternate_label": "Additional Particpant",
+            "o:alternate_comment": "Non-enslaved participants",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/vocab\/relationship",
+            "vocabulary_label": "Relationship",
+            "local_name": "knowsOf",
+            "label": "Knows Of"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+            "vocabulary_label": "OTGEvents",
+            "local_name": "petitionerAgainst",
+            "label": "Petitioner"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+            "vocabulary_label": "OTGEvents",
+            "local_name": "defendantAgainst",
+            "label": "Defendant"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+            "vocabulary_label": "OTGEvents",
+            "local_name": "attorneyFor",
+            "label": "Attorney For"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+            "vocabulary_label": "OTGEvents",
+            "local_name": "attorneyAgainst",
+            "label": "Attorney Against"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+            "vocabulary_label": "OTGEvents",
+            "local_name": "judge",
+            "label": "Judge"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "https:\/\/onthesegrounds.org\/vocab#",
+        "vocabulary_label": "OTGEvents",
+        "local_name": "LegalEvent",
+        "label": "Legal Event"
+    },
+    "o:title_property": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "title",
+        "label": "Title"
+    },
+    "o:description_property": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "description",
+        "label": "Description"
+    }
+}

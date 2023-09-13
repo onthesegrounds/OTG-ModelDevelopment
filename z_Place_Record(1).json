@@ -1,0 +1,216 @@
+{
+    "o:label": "z-Place Record",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Name",
+            "o:alternate_comment": "A name given to the place",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Latitude",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "latitude",
+            "label": "latitude"
+        },
+        {
+            "o:alternate_label": "Longitude",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "longitude",
+            "label": "longitude"
+        },
+        {
+            "o:alternate_label": "City",
+            "o:alternate_comment": "The name of the city, town, or village where the event happened",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "addressLocality",
+            "label": "addressLocality"
+        },
+        {
+            "o:alternate_label": "Province or Place",
+            "o:alternate_comment": "The name of the province or state where the event happened. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/vocab\/bio\/0.1\/",
+            "vocabulary_label": "Bio",
+            "local_name": "state",
+            "label": "State"
+        },
+        {
+            "o:alternate_label": "Country",
+            "o:alternate_comment": "The verbatim name of the nation where the event happened at the point in time when it happened.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "addressCountry",
+            "label": "addressCountry"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "An account of the location.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Place Identifier",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "identifier",
+            "label": "Identifier"
+        },
+        {
+            "o:alternate_label": "Place Type",
+            "o:alternate_comment": "A generic category or class of location. ",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "customvocab:20",
+                    "label": "Place Type (Enslaved)"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/vocab\/bio\/0.1\/",
+            "vocabulary_label": "Bio",
+            "local_name": "place",
+            "label": "Place"
+        },
+        {
+            "o:alternate_label": "Region",
+            "o:alternate_comment": "Identifies a geographic area that encompasses this place",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "addressRegion",
+            "label": "addressRegion"
+        },
+        {
+            "o:alternate_label": "Same As",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "sameAs",
+            "label": "sameAs"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "Location",
+        "label": "Location"
+    },
+    "o:title_property": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "title",
+        "label": "Title"
+    },
+    "o:description_property": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "description",
+        "label": "Description"
+    }
+}
